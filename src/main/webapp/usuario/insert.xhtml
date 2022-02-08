@@ -31,10 +31,43 @@
 
 	</h:panelGrid>
 
-	<h:panelGrid>
-
-
-
+	<h:panelGrid>	
+			<h:outputLabel 
+			value= "Nome"
+			for= "name"/>
+			<h:inputText
+			id="name"
+			value="#{personListingDTO.name}"
+			required="true"
+			requiredMessage="Nome obrigatório!"/>
+					
+			<h:outputLabel
+			value= "Documento"
+			for= "document"
+			/>
+			<h:inputText
+			id="document"
+			value="#{personListingDTO.document}"
+			required="true"
+			requiredMessage="Campo obrigatório!"/>
+			
+			<h:outputLabel
+			value= "Data de Nascimento"
+			for="birthDate"
+			/>
+			<h:inputText
+			id= "birthDate"
+			value="#{personListingDTO.birthDate}"
+			required="true"
+			requiredMessage="Campo obrigatório!"/>
+			
+			<h:commandButton
+			value= "Inserir"
+			
+			/>
+		
+		
+		
 	</h:panelGrid>
 
 	<h:panelGrid>

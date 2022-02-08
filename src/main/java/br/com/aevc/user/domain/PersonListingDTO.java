@@ -2,11 +2,27 @@ package br.com.aevc.user.domain;
 
 import java.time.LocalDate;
 
-public class PersonListingDTO {
+import javax.enterprise.context.RequestScoped;
+import javax.enterprise.inject.Any;
+import javax.inject.Named;
+import javax.persistence.Id;
 
-	private String name;
+
+@Named
+@RequestScoped
+public class PersonListingDTO {
+	
+	@Id
+	private String name;	
+	@Any
 	private String document;
+	@Any
 	private LocalDate birthDate;
+	
+	
+	public PersonListingDTO() {
+		
+	}
 
 	public PersonListingDTO(String name, String document, LocalDate birthDate) {
 		super();

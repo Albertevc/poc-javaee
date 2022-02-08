@@ -54,7 +54,7 @@ public class Profile {
 		return menus;
 	}
 
-	public void setMenus(List<Menu> menus) {
+	public void qqwwdaqqxc (List<Menu> menus) {
 		this.menus = menus;
 	}
 
